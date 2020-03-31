@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="LeetCode_C"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/id4/CLionProjects/LeetCode_C/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/id4/CLionProjects/LeetCode_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/id4/CLionProjects/LeetCode_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/id4/CLionProjects/LeetCode_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/id4/CLionProjects/LeetCode_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/id4/CLionProjects/LeetCode_C/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/id4/CLionProjects/LeetCode_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/id4/CLionProjects/LeetCode_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/id4/CLionProjects/LeetCode_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/id4/CLionProjects/LeetCode_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/id4/CLionProjects/LeetCode_C/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/id4/CLionProjects/LeetCode_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/id4/CLionProjects/LeetCode_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/id4/CLionProjects/LeetCode_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/id4/CLionProjects/LeetCode_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LeetCode_C">
+				<Option output="/Users/id4/CLionProjects/LeetCode_C/cmake-build-debug/LeetCode_C" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/id4/CLionProjects/LeetCode_C/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/id4/CLionProjects/LeetCode_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 LeetCode_C"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/id4/CLionProjects/LeetCode_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/id4/CLionProjects/LeetCode_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/id4/CLionProjects/LeetCode_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LeetCode_C/fast">
+				<Option output="/Users/id4/CLionProjects/LeetCode_C/cmake-build-debug/LeetCode_C" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/id4/CLionProjects/LeetCode_C/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/id4/CLionProjects/LeetCode_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 LeetCode_C/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/id4/CLionProjects/LeetCode_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/id4/CLionProjects/LeetCode_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/id4/CLionProjects/LeetCode_C/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/id4/CLionProjects/LeetCode_C/include/merge_sort.h">
+			<Option target="LeetCode_C"/>
+		</Unit>
+		<Unit filename="/Users/id4/CLionProjects/LeetCode_C/leetcode/x0000_two_sum.c">
+			<Option target="LeetCode_C"/>
+		</Unit>
+		<Unit filename="/Users/id4/CLionProjects/LeetCode_C/leetcode/x0000_two_sum.h">
+			<Option target="LeetCode_C"/>
+		</Unit>
+		<Unit filename="/Users/id4/CLionProjects/LeetCode_C/leetcode/x0001_add_two_num.c">
+			<Option target="LeetCode_C"/>
+		</Unit>
+		<Unit filename="/Users/id4/CLionProjects/LeetCode_C/leetcode/x0001_add_two_num.h">
+			<Option target="LeetCode_C"/>
+		</Unit>
+		<Unit filename="/Users/id4/CLionProjects/LeetCode_C/leetcode/x0002_longest_substring.c">
+			<Option target="LeetCode_C"/>
+		</Unit>
+		<Unit filename="/Users/id4/CLionProjects/LeetCode_C/leetcode/x0002_longest_substring.h">
+			<Option target="LeetCode_C"/>
+		</Unit>
+		<Unit filename="/Users/id4/CLionProjects/LeetCode_C/leetcode/x0003_find_median_two_arr.c">
+			<Option target="LeetCode_C"/>
+		</Unit>
+		<Unit filename="/Users/id4/CLionProjects/LeetCode_C/leetcode/x0003_find_median_two_arr.h">
+			<Option target="LeetCode_C"/>
+		</Unit>
+		<Unit filename="/Users/id4/CLionProjects/LeetCode_C/leetcode/x0004_palindromic_substring.c">
+			<Option target="LeetCode_C"/>
+		</Unit>
+		<Unit filename="/Users/id4/CLionProjects/LeetCode_C/leetcode/x0004_palindromic_substring.h">
+			<Option target="LeetCode_C"/>
+		</Unit>
+		<Unit filename="/Users/id4/CLionProjects/LeetCode_C/leetcode/x0005_zigzag.c">
+			<Option target="LeetCode_C"/>
+		</Unit>
+		<Unit filename="/Users/id4/CLionProjects/LeetCode_C/leetcode/x0005_zigzag.h">
+			<Option target="LeetCode_C"/>
+		</Unit>
+		<Unit filename="/Users/id4/CLionProjects/LeetCode_C/leetcode/x0007_str2int.c">
+			<Option target="LeetCode_C"/>
+		</Unit>
+		<Unit filename="/Users/id4/CLionProjects/LeetCode_C/leetcode/x0007_str2int.h">
+			<Option target="LeetCode_C"/>
+		</Unit>
+		<Unit filename="/Users/id4/CLionProjects/LeetCode_C/leetcode/x0009_expression_match.c">
+			<Option target="LeetCode_C"/>
+		</Unit>
+		<Unit filename="/Users/id4/CLionProjects/LeetCode_C/leetcode/x0009_expression_match.h">
+			<Option target="LeetCode_C"/>
+		</Unit>
+		<Unit filename="/Users/id4/CLionProjects/LeetCode_C/main.c">
+			<Option target="LeetCode_C"/>
+		</Unit>
+		<Unit filename="/Users/id4/CLionProjects/LeetCode_C/src/sorting/merge_sort.c">
+			<Option target="LeetCode_C"/>
+		</Unit>
+		<Unit filename="/Users/id4/CLionProjects/LeetCode_C/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
