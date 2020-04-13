@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: cmake_test
+# Project: LEETCODE_C
 # Configurations: Debug
 # =============================================================================
 
@@ -34,50 +34,38 @@ CONFIGURATION = Debug
 
 include rules.ninja
 
-
-#############################################
-# Utility command for rebuild_cache
-
-build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\VSCode_Projects\LeetCode_C\build && C:\CMake\bin\cmake.exe --regenerate-during-build -SD:\VSCode_Projects\LeetCode_C -BD:\VSCode_Projects\LeetCode_C\build"
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build rebuild_cache: phony CMakeFiles/rebuild_cache.util
-
 # =============================================================================
-# Object build statements for EXECUTABLE target cmake_test
+# Object build statements for EXECUTABLE target LEETCODE_C
 
 
 #############################################
-# Order-only phony target for cmake_test
+# Order-only phony target for LEETCODE_C
 
-build cmake_object_order_depends_target_cmake_test_DEBUG: phony || CMakeFiles/cmake_test.dir
+build cmake_object_order_depends_target_LEETCODE_C_DEBUG: phony || cmake_object_order_depends_target_Src_DEBUG cmake_object_order_depends_target_SupportLib_DEBUG
 
-build CMakeFiles/cmake_test.dir/main.c.obj: C_COMPILER__cmake_test_Debug ../main.c || cmake_object_order_depends_target_cmake_test_DEBUG
-  DEP_FILE = CMakeFiles\cmake_test.dir\main.c.obj.d
+build CMakeFiles/LEETCODE_C.dir/main.c.obj: C_COMPILER__LEETCODE_C_Debug ../main.c || cmake_object_order_depends_target_LEETCODE_C_DEBUG
+  DEP_FILE = CMakeFiles\LEETCODE_C.dir\main.c.obj.d
   FLAGS = -g   -std=gnu99
-  OBJECT_DIR = CMakeFiles\cmake_test.dir
-  OBJECT_FILE_DIR = CMakeFiles\cmake_test.dir
+  OBJECT_DIR = CMakeFiles\LEETCODE_C.dir
+  OBJECT_FILE_DIR = CMakeFiles\LEETCODE_C.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target cmake_test
+# Link build statements for EXECUTABLE target LEETCODE_C
 
 
 #############################################
-# Link the executable cmake_test.exe
+# Link the executable LEETCODE_C.exe
 
-build cmake_test.exe: C_EXECUTABLE_LINKER__cmake_test_Debug CMakeFiles/cmake_test.dir/main.c.obj
+build LEETCODE_C.exe: C_EXECUTABLE_LINKER__LEETCODE_C_Debug CMakeFiles/LEETCODE_C.dir/main.c.obj | lib/libSupportLib.a src/libSrc.a lib/libSupportLib.a || lib/libSupportLib.a src/libSrc.a
   FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\cmake_test.dir
+  LINK_LIBRARIES = lib/libSupportLib.a  src/libSrc.a  lib/libSupportLib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\LEETCODE_C.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = cmake_test.exe
-  TARGET_IMPLIB = libcmake_test.dll.a
-  TARGET_PDB = cmake_test.exe.dbg
+  TARGET_FILE = LEETCODE_C.exe
+  TARGET_IMPLIB = libLEETCODE_C.dll.a
+  TARGET_PDB = LEETCODE_C.exe.dbg
 
 
 #############################################
@@ -91,10 +79,207 @@ build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
 
 build edit_cache: phony CMakeFiles/edit_cache.util
 
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D D:\VSCode_Projects\LeetCode_C\build && C:\CMake\bin\cmake.exe --regenerate-during-build -SD:\VSCode_Projects\LeetCode_C -BD:\VSCode_Projects\LeetCode_C\build"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# D:/VSCode_Projects/LeetCode_C/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target SupportLib
+
+
+#############################################
+# Order-only phony target for SupportLib
+
+build cmake_object_order_depends_target_SupportLib_DEBUG: phony || lib/CMakeFiles/SupportLib.dir
+
+build lib/CMakeFiles/SupportLib.dir/merge_sort.c.obj: C_COMPILER__SupportLib_Debug ../lib/merge_sort.c || cmake_object_order_depends_target_SupportLib_DEBUG
+  DEP_FILE = lib\CMakeFiles\SupportLib.dir\merge_sort.c.obj.d
+  FLAGS = -g   -std=gnu99
+  OBJECT_DIR = lib\CMakeFiles\SupportLib.dir
+  OBJECT_FILE_DIR = lib\CMakeFiles\SupportLib.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target SupportLib
+
+
+#############################################
+# Link the static library lib\libSupportLib.a
+
+build lib/libSupportLib.a: C_STATIC_LIBRARY_LINKER__SupportLib_Debug lib/CMakeFiles/SupportLib.dir/merge_sort.c.obj
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = lib\CMakeFiles\SupportLib.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lib\libSupportLib.a
+  TARGET_PDB = SupportLib.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build lib/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D D:\VSCode_Projects\LeetCode_C\build\lib && C:\CMake\bin\cmake-gui.exe -SD:\VSCode_Projects\LeetCode_C -BD:\VSCode_Projects\LeetCode_C\build"
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build lib/edit_cache: phony lib/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build lib/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D D:\VSCode_Projects\LeetCode_C\build\lib && C:\CMake\bin\cmake.exe --regenerate-during-build -SD:\VSCode_Projects\LeetCode_C -BD:\VSCode_Projects\LeetCode_C\build"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build lib/rebuild_cache: phony lib/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# D:/VSCode_Projects/LeetCode_C/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target Src
+
+
+#############################################
+# Order-only phony target for Src
+
+build cmake_object_order_depends_target_Src_DEBUG: phony || cmake_object_order_depends_target_SupportLib_DEBUG
+
+build src/CMakeFiles/Src.dir/x0000_two_sum.c.obj: C_COMPILER__Src_Debug ../src/x0000_two_sum.c || cmake_object_order_depends_target_Src_DEBUG
+  DEP_FILE = src\CMakeFiles\Src.dir\x0000_two_sum.c.obj.d
+  FLAGS = -g   -std=gnu99
+  INCLUDES = -I../src/../lib
+  OBJECT_DIR = src\CMakeFiles\Src.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\Src.dir
+
+build src/CMakeFiles/Src.dir/x0001_add_two_num.c.obj: C_COMPILER__Src_Debug ../src/x0001_add_two_num.c || cmake_object_order_depends_target_Src_DEBUG
+  DEP_FILE = src\CMakeFiles\Src.dir\x0001_add_two_num.c.obj.d
+  FLAGS = -g   -std=gnu99
+  INCLUDES = -I../src/../lib
+  OBJECT_DIR = src\CMakeFiles\Src.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\Src.dir
+
+build src/CMakeFiles/Src.dir/x0002_longest_substring.c.obj: C_COMPILER__Src_Debug ../src/x0002_longest_substring.c || cmake_object_order_depends_target_Src_DEBUG
+  DEP_FILE = src\CMakeFiles\Src.dir\x0002_longest_substring.c.obj.d
+  FLAGS = -g   -std=gnu99
+  INCLUDES = -I../src/../lib
+  OBJECT_DIR = src\CMakeFiles\Src.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\Src.dir
+
+build src/CMakeFiles/Src.dir/x0003_find_median_two_arr.c.obj: C_COMPILER__Src_Debug ../src/x0003_find_median_two_arr.c || cmake_object_order_depends_target_Src_DEBUG
+  DEP_FILE = src\CMakeFiles\Src.dir\x0003_find_median_two_arr.c.obj.d
+  FLAGS = -g   -std=gnu99
+  INCLUDES = -I../src/../lib
+  OBJECT_DIR = src\CMakeFiles\Src.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\Src.dir
+
+build src/CMakeFiles/Src.dir/x0004_palindromic_substring.c.obj: C_COMPILER__Src_Debug ../src/x0004_palindromic_substring.c || cmake_object_order_depends_target_Src_DEBUG
+  DEP_FILE = src\CMakeFiles\Src.dir\x0004_palindromic_substring.c.obj.d
+  FLAGS = -g   -std=gnu99
+  INCLUDES = -I../src/../lib
+  OBJECT_DIR = src\CMakeFiles\Src.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\Src.dir
+
+build src/CMakeFiles/Src.dir/x0005_zigzag.c.obj: C_COMPILER__Src_Debug ../src/x0005_zigzag.c || cmake_object_order_depends_target_Src_DEBUG
+  DEP_FILE = src\CMakeFiles\Src.dir\x0005_zigzag.c.obj.d
+  FLAGS = -g   -std=gnu99
+  INCLUDES = -I../src/../lib
+  OBJECT_DIR = src\CMakeFiles\Src.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\Src.dir
+
+build src/CMakeFiles/Src.dir/x0007_str2int.c.obj: C_COMPILER__Src_Debug ../src/x0007_str2int.c || cmake_object_order_depends_target_Src_DEBUG
+  DEP_FILE = src\CMakeFiles\Src.dir\x0007_str2int.c.obj.d
+  FLAGS = -g   -std=gnu99
+  INCLUDES = -I../src/../lib
+  OBJECT_DIR = src\CMakeFiles\Src.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\Src.dir
+
+build src/CMakeFiles/Src.dir/x0009_expression_match.c.obj: C_COMPILER__Src_Debug ../src/x0009_expression_match.c || cmake_object_order_depends_target_Src_DEBUG
+  DEP_FILE = src\CMakeFiles\Src.dir\x0009_expression_match.c.obj.d
+  FLAGS = -g   -std=gnu99
+  INCLUDES = -I../src/../lib
+  OBJECT_DIR = src\CMakeFiles\Src.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\Src.dir
+
+build src/CMakeFiles/Src.dir/x000A_container.c.obj: C_COMPILER__Src_Debug ../src/x000A_container.c || cmake_object_order_depends_target_Src_DEBUG
+  DEP_FILE = src\CMakeFiles\Src.dir\x000A_container.c.obj.d
+  FLAGS = -g   -std=gnu99
+  INCLUDES = -I../src/../lib
+  OBJECT_DIR = src\CMakeFiles\Src.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\Src.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target Src
+
+
+#############################################
+# Link the static library src\libSrc.a
+
+build src/libSrc.a: C_STATIC_LIBRARY_LINKER__Src_Debug src/CMakeFiles/Src.dir/x0000_two_sum.c.obj src/CMakeFiles/Src.dir/x0001_add_two_num.c.obj src/CMakeFiles/Src.dir/x0002_longest_substring.c.obj src/CMakeFiles/Src.dir/x0003_find_median_two_arr.c.obj src/CMakeFiles/Src.dir/x0004_palindromic_substring.c.obj src/CMakeFiles/Src.dir/x0005_zigzag.c.obj src/CMakeFiles/Src.dir/x0007_str2int.c.obj src/CMakeFiles/Src.dir/x0009_expression_match.c.obj src/CMakeFiles/Src.dir/x000A_container.c.obj || lib/libSupportLib.a
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = src\CMakeFiles\Src.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = src\libSrc.a
+  TARGET_PDB = Src.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D D:\VSCode_Projects\LeetCode_C\build\src && C:\CMake\bin\cmake-gui.exe -SD:\VSCode_Projects\LeetCode_C -BD:\VSCode_Projects\LeetCode_C\build"
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build src/edit_cache: phony src/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D D:\VSCode_Projects\LeetCode_C\build\src && C:\CMake\bin\cmake.exe --regenerate-during-build -SD:\VSCode_Projects\LeetCode_C -BD:\VSCode_Projects\LeetCode_C\build"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build src/rebuild_cache: phony src/CMakeFiles/rebuild_cache.util
+
 # =============================================================================
 # Target aliases.
 
-build cmake_test: phony cmake_test.exe
+build LEETCODE_C: phony LEETCODE_C.exe
+
+build Src: phony src/libSrc.a
+
+build SupportLib: phony lib/libSupportLib.a
+
+build libSrc.a: phony src/libSrc.a
+
+build libSupportLib.a: phony lib/libSupportLib.a
 
 # =============================================================================
 # Folder targets.
@@ -104,7 +289,21 @@ build cmake_test: phony cmake_test.exe
 #############################################
 # Folder: D:/VSCode_Projects/LeetCode_C/build
 
-build all: phony cmake_test.exe
+build all: phony LEETCODE_C.exe lib/all src/all
+
+# =============================================================================
+
+#############################################
+# Folder: D:/VSCode_Projects/LeetCode_C/build/lib
+
+build lib/all: phony lib/libSupportLib.a
+
+# =============================================================================
+
+#############################################
+# Folder: D:/VSCode_Projects/LeetCode_C/build/src
+
+build src/all: phony src/libSrc.a
 
 # =============================================================================
 # Unknown Build Time Dependencies.
@@ -118,14 +317,14 @@ build all: phony cmake_test.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt C$:/CMake/share/cmake-3.17/Modules/CMakeCInformation.cmake C$:/CMake/share/cmake-3.17/Modules/CMakeCXXInformation.cmake C$:/CMake/share/cmake-3.17/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/CMake/share/cmake-3.17/Modules/CMakeCommonLanguageInclude.cmake C$:/CMake/share/cmake-3.17/Modules/CMakeGenericSystem.cmake C$:/CMake/share/cmake-3.17/Modules/CMakeInitializeConfigs.cmake C$:/CMake/share/cmake-3.17/Modules/CMakeLanguageInformation.cmake C$:/CMake/share/cmake-3.17/Modules/CMakeRCInformation.cmake C$:/CMake/share/cmake-3.17/Modules/CMakeSystemSpecificInformation.cmake C$:/CMake/share/cmake-3.17/Modules/CMakeSystemSpecificInitialize.cmake C$:/CMake/share/cmake-3.17/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/CMake/share/cmake-3.17/Modules/Compiler/GNU-C.cmake C$:/CMake/share/cmake-3.17/Modules/Compiler/GNU-CXX.cmake C$:/CMake/share/cmake-3.17/Modules/Compiler/GNU.cmake C$:/CMake/share/cmake-3.17/Modules/Internal/CMakeCheckCompilerFlag.cmake C$:/CMake/share/cmake-3.17/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/CMake/share/cmake-3.17/Modules/Platform/Windows-GNU-C.cmake C$:/CMake/share/cmake-3.17/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/CMake/share/cmake-3.17/Modules/Platform/Windows-GNU-CXX.cmake C$:/CMake/share/cmake-3.17/Modules/Platform/Windows-GNU.cmake C$:/CMake/share/cmake-3.17/Modules/Platform/Windows-windres.cmake C$:/CMake/share/cmake-3.17/Modules/Platform/Windows.cmake C$:/CMake/share/cmake-3.17/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.17.1/CMakeCCompiler.cmake CMakeFiles/3.17.1/CMakeCXXCompiler.cmake CMakeFiles/3.17.1/CMakeRCCompiler.cmake CMakeFiles/3.17.1/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../lib/CMakeLists.txt ../src/CMakeLists.txt C$:/CMake/share/cmake-3.17/Modules/CMakeCInformation.cmake C$:/CMake/share/cmake-3.17/Modules/CMakeCXXInformation.cmake C$:/CMake/share/cmake-3.17/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/CMake/share/cmake-3.17/Modules/CMakeCommonLanguageInclude.cmake C$:/CMake/share/cmake-3.17/Modules/CMakeGenericSystem.cmake C$:/CMake/share/cmake-3.17/Modules/CMakeInitializeConfigs.cmake C$:/CMake/share/cmake-3.17/Modules/CMakeLanguageInformation.cmake C$:/CMake/share/cmake-3.17/Modules/CMakeRCInformation.cmake C$:/CMake/share/cmake-3.17/Modules/CMakeSystemSpecificInformation.cmake C$:/CMake/share/cmake-3.17/Modules/CMakeSystemSpecificInitialize.cmake C$:/CMake/share/cmake-3.17/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/CMake/share/cmake-3.17/Modules/Compiler/GNU-C.cmake C$:/CMake/share/cmake-3.17/Modules/Compiler/GNU-CXX.cmake C$:/CMake/share/cmake-3.17/Modules/Compiler/GNU.cmake C$:/CMake/share/cmake-3.17/Modules/Internal/CMakeCheckCompilerFlag.cmake C$:/CMake/share/cmake-3.17/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/CMake/share/cmake-3.17/Modules/Platform/Windows-GNU-C.cmake C$:/CMake/share/cmake-3.17/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/CMake/share/cmake-3.17/Modules/Platform/Windows-GNU-CXX.cmake C$:/CMake/share/cmake-3.17/Modules/Platform/Windows-GNU.cmake C$:/CMake/share/cmake-3.17/Modules/Platform/Windows-windres.cmake C$:/CMake/share/cmake-3.17/Modules/Platform/Windows.cmake C$:/CMake/share/cmake-3.17/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.17.1/CMakeCCompiler.cmake CMakeFiles/3.17.1/CMakeCXXCompiler.cmake CMakeFiles/3.17.1/CMakeRCCompiler.cmake CMakeFiles/3.17.1/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt C$:/CMake/share/cmake-3.17/Modules/CMakeCInformation.cmake C$:/CMake/share/cmake-3.17/Modules/CMakeCXXInformation.cmake C$:/CMake/share/cmake-3.17/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/CMake/share/cmake-3.17/Modules/CMakeCommonLanguageInclude.cmake C$:/CMake/share/cmake-3.17/Modules/CMakeGenericSystem.cmake C$:/CMake/share/cmake-3.17/Modules/CMakeInitializeConfigs.cmake C$:/CMake/share/cmake-3.17/Modules/CMakeLanguageInformation.cmake C$:/CMake/share/cmake-3.17/Modules/CMakeRCInformation.cmake C$:/CMake/share/cmake-3.17/Modules/CMakeSystemSpecificInformation.cmake C$:/CMake/share/cmake-3.17/Modules/CMakeSystemSpecificInitialize.cmake C$:/CMake/share/cmake-3.17/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/CMake/share/cmake-3.17/Modules/Compiler/GNU-C.cmake C$:/CMake/share/cmake-3.17/Modules/Compiler/GNU-CXX.cmake C$:/CMake/share/cmake-3.17/Modules/Compiler/GNU.cmake C$:/CMake/share/cmake-3.17/Modules/Internal/CMakeCheckCompilerFlag.cmake C$:/CMake/share/cmake-3.17/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/CMake/share/cmake-3.17/Modules/Platform/Windows-GNU-C.cmake C$:/CMake/share/cmake-3.17/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/CMake/share/cmake-3.17/Modules/Platform/Windows-GNU-CXX.cmake C$:/CMake/share/cmake-3.17/Modules/Platform/Windows-GNU.cmake C$:/CMake/share/cmake-3.17/Modules/Platform/Windows-windres.cmake C$:/CMake/share/cmake-3.17/Modules/Platform/Windows.cmake C$:/CMake/share/cmake-3.17/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.17.1/CMakeCCompiler.cmake CMakeFiles/3.17.1/CMakeCXXCompiler.cmake CMakeFiles/3.17.1/CMakeRCCompiler.cmake CMakeFiles/3.17.1/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../lib/CMakeLists.txt ../src/CMakeLists.txt C$:/CMake/share/cmake-3.17/Modules/CMakeCInformation.cmake C$:/CMake/share/cmake-3.17/Modules/CMakeCXXInformation.cmake C$:/CMake/share/cmake-3.17/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/CMake/share/cmake-3.17/Modules/CMakeCommonLanguageInclude.cmake C$:/CMake/share/cmake-3.17/Modules/CMakeGenericSystem.cmake C$:/CMake/share/cmake-3.17/Modules/CMakeInitializeConfigs.cmake C$:/CMake/share/cmake-3.17/Modules/CMakeLanguageInformation.cmake C$:/CMake/share/cmake-3.17/Modules/CMakeRCInformation.cmake C$:/CMake/share/cmake-3.17/Modules/CMakeSystemSpecificInformation.cmake C$:/CMake/share/cmake-3.17/Modules/CMakeSystemSpecificInitialize.cmake C$:/CMake/share/cmake-3.17/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/CMake/share/cmake-3.17/Modules/Compiler/GNU-C.cmake C$:/CMake/share/cmake-3.17/Modules/Compiler/GNU-CXX.cmake C$:/CMake/share/cmake-3.17/Modules/Compiler/GNU.cmake C$:/CMake/share/cmake-3.17/Modules/Internal/CMakeCheckCompilerFlag.cmake C$:/CMake/share/cmake-3.17/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/CMake/share/cmake-3.17/Modules/Platform/Windows-GNU-C.cmake C$:/CMake/share/cmake-3.17/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/CMake/share/cmake-3.17/Modules/Platform/Windows-GNU-CXX.cmake C$:/CMake/share/cmake-3.17/Modules/Platform/Windows-GNU.cmake C$:/CMake/share/cmake-3.17/Modules/Platform/Windows-windres.cmake C$:/CMake/share/cmake-3.17/Modules/Platform/Windows.cmake C$:/CMake/share/cmake-3.17/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.17.1/CMakeCCompiler.cmake CMakeFiles/3.17.1/CMakeCXXCompiler.cmake CMakeFiles/3.17.1/CMakeRCCompiler.cmake CMakeFiles/3.17.1/CMakeSystem.cmake: phony
 
 
 #############################################

@@ -775,7 +775,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "1"
+			"value" : "3"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -855,7 +855,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "cmake_test"
+			"value" : "LEETCODE_C"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1234,6 +1234,30 @@
 			"value" : "FALSE"
 		},
 		{
+			"name" : "LEETCODE_C_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "D:/VSCode_Projects/LeetCode_C/build/src"
+		},
+		{
+			"name" : "LEETCODE_C_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "D:/VSCode_Projects/LeetCode_C/src"
+		},
+		{
 			"name" : "Project_BINARY_DIR",
 			"properties" : 
 			[
@@ -1256,6 +1280,18 @@
 			],
 			"type" : "STATIC",
 			"value" : "D:/VSCode_Projects/LeetCode_C"
+		},
+		{
+			"name" : "Src_LIB_DEPENDS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Dependencies for the target"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "general;SupportLib;"
 		},
 		{
 			"name" : "cmake_test_BINARY_DIR",

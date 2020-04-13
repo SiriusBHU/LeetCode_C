@@ -1,2 +1,17 @@
 # ninja log v5
 0	75	6084677851919650	CMakeFiles/cmake_test.dir/main.c.obj	30bdfe80ee8e09a6
+3	174	6084888990680915	build.ninja	486d6d2e1eae8dc8
+15	294	6084888993789818	src/CMakeFiles/Src.dir/x0007_str2int.c.obj	39ee090d9797490e
+12	313	6084888993799804	src/CMakeFiles/Src.dir/x0004_palindromic_substring.c.obj	271886420de611eb
+21	319	6084888994049550	src/CMakeFiles/Src.dir/x0005_zigzag.c.obj	f3b5bb076c97f53e
+10	320	6084888993909500	src/CMakeFiles/Src.dir/x0003_find_median_two_arr.c.obj	540c5936e2a29b21
+7	321	6084888993839664	src/CMakeFiles/Src.dir/x0001_add_two_num.c.obj	9bf0b70c7bc7bca5
+5	338	6084888994089317	lib/CMakeFiles/SupportLib.dir/merge_sort.c.obj	9c6e27fd9cc45856
+19	355	6084888994189039	src/CMakeFiles/Src.dir/x000A_container.c.obj	76c3b1820e7864b8
+1	358	6084888994258864	CMakeFiles/LEETCODE_C.dir/main.c.obj	243ae9af07a10a8a
+3	369	6084888994348612	src/CMakeFiles/Src.dir/x0000_two_sum.c.obj	9d1d841f807086a8
+17	370	6084888994458318	src/CMakeFiles/Src.dir/x0009_expression_match.c.obj	600152c076a029c9
+294	502	6084888995894482	src/CMakeFiles/Src.dir/x0002_longest_substring.c.obj	e061e9c00ad5b7bd
+343	631	6084888997300718	lib/libSupportLib.a	c140b5efb539a6da
+631	726	6084888998193467	src/libSrc.a	ab063bd93b336218
+726	1001	6084889000856628	LEETCODE_C.exe	61a3267b3205572f
