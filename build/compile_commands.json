@@ -1,0 +1,7 @@
+[
+{
+  "directory": "D:/VSCode_Projects/LeetCode_C/build",
+  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe   -g   -std=gnu99 -o CMakeFiles\\cmake_test.dir\\main.c.obj   -c D:\\VSCode_Projects\\LeetCode_C\\main.c",
+  "file": "D:/VSCode_Projects/LeetCode_C/main.c"
+}
+]

@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "leetcode/x0009_expression_match.h"
+#include "include/src/x0009_expression_match.h"
 
 
-int main() {
+int main() 
+{
     test_x0009();
     return 1;
 }
