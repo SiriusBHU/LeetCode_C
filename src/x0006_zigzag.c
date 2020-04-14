@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include "../include/src/x0005_zigzag.h"
+#include "../include/src/x0006_zigzag.h"
 
 char *convert(char *s, int numRows)
 {

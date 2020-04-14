@@ -2,7 +2,7 @@
 // Created by ID4 on 2020/3/21.
 //
 
-#include "../include/src/x0007_str2int.h"
+#include "../include/src/x0008_str2int.h"
 #include <string.h>
 #include <stdio.h>
 

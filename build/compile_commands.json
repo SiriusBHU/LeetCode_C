@@ -13,55 +13,61 @@
 
 {
   "directory": "D:/VSCode_Projects/LeetCode_C/build",
-  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe  -I../src/../lib  -g   -std=gnu99 -o src\\CMakeFiles\\Src.dir\\x0000_two_sum.c.obj   -c D:\\VSCode_Projects\\LeetCode_C\\src\\x0000_two_sum.c",
-  "file": "D:/VSCode_Projects/LeetCode_C/src/x0000_two_sum.c"
+  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe  -I../src/../lib  -g   -std=gnu99 -o src\\CMakeFiles\\Src.dir\\x0001_two_sum.c.obj   -c D:\\VSCode_Projects\\LeetCode_C\\src\\x0001_two_sum.c",
+  "file": "D:/VSCode_Projects/LeetCode_C/src/x0001_two_sum.c"
 },
 
 {
   "directory": "D:/VSCode_Projects/LeetCode_C/build",
-  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe  -I../src/../lib  -g   -std=gnu99 -o src\\CMakeFiles\\Src.dir\\x0001_add_two_num.c.obj   -c D:\\VSCode_Projects\\LeetCode_C\\src\\x0001_add_two_num.c",
-  "file": "D:/VSCode_Projects/LeetCode_C/src/x0001_add_two_num.c"
+  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe  -I../src/../lib  -g   -std=gnu99 -o src\\CMakeFiles\\Src.dir\\x0002_add_two_num.c.obj   -c D:\\VSCode_Projects\\LeetCode_C\\src\\x0002_add_two_num.c",
+  "file": "D:/VSCode_Projects/LeetCode_C/src/x0002_add_two_num.c"
 },
 
 {
   "directory": "D:/VSCode_Projects/LeetCode_C/build",
-  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe  -I../src/../lib  -g   -std=gnu99 -o src\\CMakeFiles\\Src.dir\\x0002_longest_substring.c.obj   -c D:\\VSCode_Projects\\LeetCode_C\\src\\x0002_longest_substring.c",
-  "file": "D:/VSCode_Projects/LeetCode_C/src/x0002_longest_substring.c"
+  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe  -I../src/../lib  -g   -std=gnu99 -o src\\CMakeFiles\\Src.dir\\x0003_longest_substring.c.obj   -c D:\\VSCode_Projects\\LeetCode_C\\src\\x0003_longest_substring.c",
+  "file": "D:/VSCode_Projects/LeetCode_C/src/x0003_longest_substring.c"
 },
 
 {
   "directory": "D:/VSCode_Projects/LeetCode_C/build",
-  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe  -I../src/../lib  -g   -std=gnu99 -o src\\CMakeFiles\\Src.dir\\x0003_find_median_two_arr.c.obj   -c D:\\VSCode_Projects\\LeetCode_C\\src\\x0003_find_median_two_arr.c",
-  "file": "D:/VSCode_Projects/LeetCode_C/src/x0003_find_median_two_arr.c"
+  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe  -I../src/../lib  -g   -std=gnu99 -o src\\CMakeFiles\\Src.dir\\x0004_find_median_two_arr.c.obj   -c D:\\VSCode_Projects\\LeetCode_C\\src\\x0004_find_median_two_arr.c",
+  "file": "D:/VSCode_Projects/LeetCode_C/src/x0004_find_median_two_arr.c"
 },
 
 {
   "directory": "D:/VSCode_Projects/LeetCode_C/build",
-  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe  -I../src/../lib  -g   -std=gnu99 -o src\\CMakeFiles\\Src.dir\\x0004_palindromic_substring.c.obj   -c D:\\VSCode_Projects\\LeetCode_C\\src\\x0004_palindromic_substring.c",
-  "file": "D:/VSCode_Projects/LeetCode_C/src/x0004_palindromic_substring.c"
+  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe  -I../src/../lib  -g   -std=gnu99 -o src\\CMakeFiles\\Src.dir\\x0005_palindromic_substring.c.obj   -c D:\\VSCode_Projects\\LeetCode_C\\src\\x0005_palindromic_substring.c",
+  "file": "D:/VSCode_Projects/LeetCode_C/src/x0005_palindromic_substring.c"
 },
 
 {
   "directory": "D:/VSCode_Projects/LeetCode_C/build",
-  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe  -I../src/../lib  -g   -std=gnu99 -o src\\CMakeFiles\\Src.dir\\x0005_zigzag.c.obj   -c D:\\VSCode_Projects\\LeetCode_C\\src\\x0005_zigzag.c",
-  "file": "D:/VSCode_Projects/LeetCode_C/src/x0005_zigzag.c"
+  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe  -I../src/../lib  -g   -std=gnu99 -o src\\CMakeFiles\\Src.dir\\x0006_zigzag.c.obj   -c D:\\VSCode_Projects\\LeetCode_C\\src\\x0006_zigzag.c",
+  "file": "D:/VSCode_Projects/LeetCode_C/src/x0006_zigzag.c"
 },
 
 {
   "directory": "D:/VSCode_Projects/LeetCode_C/build",
-  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe  -I../src/../lib  -g   -std=gnu99 -o src\\CMakeFiles\\Src.dir\\x0007_str2int.c.obj   -c D:\\VSCode_Projects\\LeetCode_C\\src\\x0007_str2int.c",
-  "file": "D:/VSCode_Projects/LeetCode_C/src/x0007_str2int.c"
+  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe  -I../src/../lib  -g   -std=gnu99 -o src\\CMakeFiles\\Src.dir\\x0008_str2int.c.obj   -c D:\\VSCode_Projects\\LeetCode_C\\src\\x0008_str2int.c",
+  "file": "D:/VSCode_Projects/LeetCode_C/src/x0008_str2int.c"
 },
 
 {
   "directory": "D:/VSCode_Projects/LeetCode_C/build",
-  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe  -I../src/../lib  -g   -std=gnu99 -o src\\CMakeFiles\\Src.dir\\x0009_expression_match.c.obj   -c D:\\VSCode_Projects\\LeetCode_C\\src\\x0009_expression_match.c",
-  "file": "D:/VSCode_Projects/LeetCode_C/src/x0009_expression_match.c"
+  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe  -I../src/../lib  -g   -std=gnu99 -o src\\CMakeFiles\\Src.dir\\x0010_expression_match.c.obj   -c D:\\VSCode_Projects\\LeetCode_C\\src\\x0010_expression_match.c",
+  "file": "D:/VSCode_Projects/LeetCode_C/src/x0010_expression_match.c"
 },
 
 {
   "directory": "D:/VSCode_Projects/LeetCode_C/build",
-  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe  -I../src/../lib  -g   -std=gnu99 -o src\\CMakeFiles\\Src.dir\\x000A_container.c.obj   -c D:\\VSCode_Projects\\LeetCode_C\\src\\x000A_container.c",
-  "file": "D:/VSCode_Projects/LeetCode_C/src/x000A_container.c"
+  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe  -I../src/../lib  -g   -std=gnu99 -o src\\CMakeFiles\\Src.dir\\x0011_container.c.obj   -c D:\\VSCode_Projects\\LeetCode_C\\src\\x0011_container.c",
+  "file": "D:/VSCode_Projects/LeetCode_C/src/x0011_container.c"
+},
+
+{
+  "directory": "D:/VSCode_Projects/LeetCode_C/build",
+  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe  -I../src/../lib  -g   -std=gnu99 -o src\\CMakeFiles\\Src.dir\\x0015_3sum.c.obj   -c D:\\VSCode_Projects\\LeetCode_C\\src\\x0015_3sum.c",
+  "file": "D:/VSCode_Projects/LeetCode_C/src/x0015_3sum.c"
 }
 ]
