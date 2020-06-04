@@ -235,6 +235,20 @@ build src/CMakeFiles/Src.dir/x0015_3sum.c.obj: C_COMPILER__Src_Debug ../src/x001
   OBJECT_DIR = src\CMakeFiles\Src.dir
   OBJECT_FILE_DIR = src\CMakeFiles\Src.dir
 
+build src/CMakeFiles/Src.dir/x0016_3sum_closest.c.obj: C_COMPILER__Src_Debug ../src/x0016_3sum_closest.c || cmake_object_order_depends_target_Src_DEBUG
+  DEP_FILE = src\CMakeFiles\Src.dir\x0016_3sum_closest.c.obj.d
+  FLAGS = -g   -std=gnu99
+  INCLUDES = -I../src/../lib
+  OBJECT_DIR = src\CMakeFiles\Src.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\Src.dir
+
+build src/CMakeFiles/Src.dir/x0017_letter_comb.c.obj: C_COMPILER__Src_Debug ../src/x0017_letter_comb.c || cmake_object_order_depends_target_Src_DEBUG
+  DEP_FILE = src\CMakeFiles\Src.dir\x0017_letter_comb.c.obj.d
+  FLAGS = -g   -std=gnu99
+  INCLUDES = -I../src/../lib
+  OBJECT_DIR = src\CMakeFiles\Src.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\Src.dir
+
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target Src
@@ -243,7 +257,7 @@ build src/CMakeFiles/Src.dir/x0015_3sum.c.obj: C_COMPILER__Src_Debug ../src/x001
 #############################################
 # Link the static library src\libSrc.a
 
-build src/libSrc.a: C_STATIC_LIBRARY_LINKER__Src_Debug src/CMakeFiles/Src.dir/x0001_two_sum.c.obj src/CMakeFiles/Src.dir/x0002_add_two_num.c.obj src/CMakeFiles/Src.dir/x0003_longest_substring.c.obj src/CMakeFiles/Src.dir/x0004_find_median_two_arr.c.obj src/CMakeFiles/Src.dir/x0005_palindromic_substring.c.obj src/CMakeFiles/Src.dir/x0006_zigzag.c.obj src/CMakeFiles/Src.dir/x0008_str2int.c.obj src/CMakeFiles/Src.dir/x0010_expression_match.c.obj src/CMakeFiles/Src.dir/x0011_container.c.obj src/CMakeFiles/Src.dir/x0015_3sum.c.obj || lib/libSupportLib.a
+build src/libSrc.a: C_STATIC_LIBRARY_LINKER__Src_Debug src/CMakeFiles/Src.dir/x0001_two_sum.c.obj src/CMakeFiles/Src.dir/x0002_add_two_num.c.obj src/CMakeFiles/Src.dir/x0003_longest_substring.c.obj src/CMakeFiles/Src.dir/x0004_find_median_two_arr.c.obj src/CMakeFiles/Src.dir/x0005_palindromic_substring.c.obj src/CMakeFiles/Src.dir/x0006_zigzag.c.obj src/CMakeFiles/Src.dir/x0008_str2int.c.obj src/CMakeFiles/Src.dir/x0010_expression_match.c.obj src/CMakeFiles/Src.dir/x0011_container.c.obj src/CMakeFiles/Src.dir/x0015_3sum.c.obj src/CMakeFiles/Src.dir/x0016_3sum_closest.c.obj src/CMakeFiles/Src.dir/x0017_letter_comb.c.obj || lib/libSupportLib.a
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = src\CMakeFiles\Src.dir
   POST_BUILD = cd .

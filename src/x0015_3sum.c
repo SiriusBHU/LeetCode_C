@@ -23,6 +23,8 @@ int** threeSum(int* nums, int numsSize, int* returnSize, int** returnColumnSizes
     // check input
     if (!nums || numsSize < 3) {
         printf("invalid input!\n");
+        *returnSize = 0;
+        *returnColumnSizes = 0;
         return NULL;
     }
     
@@ -44,8 +46,6 @@ int** threeSum(int* nums, int numsSize, int* returnSize, int** returnColumnSizes
             // guarantee no repeated value 
             if (pair_count && nums[i] == nums[i - 1])
                 break;
-
-            int a = nums[i], b = nums[j], c = nums[k];
             
             if (nums[i] + nums[j] + nums[k] < 0) j++;
             else if (nums[i] + nums[j] + nums[k] > 0) k--;
@@ -69,13 +69,19 @@ int** threeSum(int* nums, int numsSize, int* returnSize, int** returnColumnSizes
             }
         } 
         i++;
-        // while (nums[i] == nums[i + 1]) i++;
     }
 
     // check pair_count and return
-    *returnSize = pair_count;
-    if (pair_count) return arr;
-    else return NULL;
+    if (pair_count) {
+        *returnSize = pair_count;
+        *returnColumnSizes = malloc(pair_count * sizeof(int));
+        for (int i = 0; i < pair_count; i++) (*returnColumnSizes)[i] = 3;
+        return arr;
+    }
+    else {
+        *returnSize = 0;
+        return NULL;
+    }
 }
 
 
@@ -83,9 +89,9 @@ void test_x0015()
 {
     int nums[6] = {-1, 0, 1, 2, -1, -4};
     int arr_size;
-    int **arr_column_size;
+    int *arr_column_size;
 
-    int **arr = threeSum(nums, 6, &arr_size, arr_column_size);
+    int **arr = threeSum(nums, 6, &arr_size, &arr_column_size);
     for (int i = 0; i < arr_size; i++) {
         for (int j = 0; j < 3; j ++)
             printf("%d ", arr[i][j]);

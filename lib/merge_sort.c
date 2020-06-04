@@ -39,7 +39,7 @@ int _Merge(void *base,
     rank i = 0, j = 0, k = lo;
     while (i < len_head && j < len_tail) {
         if (Compare((uintptr_t)vec_head + i * elem_bytes, 
-                    (uintptr_t)vec_tail + j * elem_bytes)) {
+                    (uintptr_t)vec_tail + j * elem_bytes) <= 0) {
             if (!memcpy((uintptr_t)base + k * elem_bytes,
                         (uintptr_t)vec_head + i * elem_bytes,
                         elem_bytes)) {
