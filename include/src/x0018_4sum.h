@@ -1,0 +1,6 @@
+#ifndef LEETCODE_C_X0018_4SUM
+#define LEETCODE_C_X0018_4SUM
+
+#endif //LEETCODE_C_X0018_4SUM
+
+void test_x0018();
