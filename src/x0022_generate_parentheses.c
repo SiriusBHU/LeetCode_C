@@ -3,11 +3,19 @@
 #include <string.h>
 
 
-void _Search(int *sum_interval, int idx, int max_interval)
+void _Search(int *sum_interval, int sum_size, int idx, int max_interval)
 {   
-    for (int i = 0; i <= max_interval && i < idx; i++) {
+    for (int i = 0; i <= max_interval && i <= idx + 1; i++) {
+        
         sum_interval[idx] = i;
-        _Search(sum_interval, idx - 1, i);
+        if (idx == 0) {
+            for (int j = 0; j < sum_size; j++)
+                printf("%d ", sum_interval[j]);
+            printf("\n");
+        } else {
+            _Search(sum_interval, sum_size, idx - 1, i);
+            //printf("%d", 1);
+        }
     }
 }
 
@@ -40,6 +48,12 @@ char ** generateParenthesis(int n, int* returnSize){
     
     // generate sum_interval array
     int *sum_interval = malloc((n - 1) * sizeof(int));
+    memset(sum_interval, 0x0, (n-1) * sizeof(int));
+    _Search(sum_interval, n - 1, n - 2, n - 1);
+    
+    char **res;
+    *returnSize = 0;
+    return res;
     
     
     
