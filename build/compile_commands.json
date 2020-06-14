@@ -87,5 +87,11 @@
   "directory": "D:/VSCode_Projects/LeetCode_C/build",
   "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe  -I../src/../lib  -g   -std=gnu99 -o src\\CMakeFiles\\Src.dir\\x0018_4sum.c.obj   -c D:\\VSCode_Projects\\LeetCode_C\\src\\x0018_4sum.c",
   "file": "D:/VSCode_Projects/LeetCode_C/src/x0018_4sum.c"
+},
+
+{
+  "directory": "D:/VSCode_Projects/LeetCode_C/build",
+  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe  -I../src/../lib  -g   -std=gnu99 -o src\\CMakeFiles\\Src.dir\\x0022_generate_parentheses.c.obj   -c D:\\VSCode_Projects\\LeetCode_C\\src\\x0022_generate_parentheses.c",
+  "file": "D:/VSCode_Projects/LeetCode_C/src/x0022_generate_parentheses.c"
 }
 ]
